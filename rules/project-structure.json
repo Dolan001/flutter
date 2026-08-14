@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "framework": "flutter",
+  "target_root": "apps/mobile",
+  "required_paths": [
+    "pubspec.yaml",
+    "pubspec.lock",
+    "analysis_options.yaml",
+    ".env.example",
+    ".gitignore",
+    "README.md",
+    "android",
+    "ios",
+    "assets/images",
+    "assets/fonts",
+    "lib/main.dart",
+    "lib/app/app.dart",
+    "lib/app/bootstrap.dart",
+    "lib/app/router.dart",
+    "lib/core/config/env.dart",
+    "lib/core/errors/app_failure.dart",
+    "lib/core/network/api_client.dart",
+    "lib/core/network/api_error.dart",
+    "lib/core/security/secure_storage.dart",
+    "lib/core/theme/app_theme.dart",
+    "lib/features",
+    "lib/shared/widgets",
+    "lib/l10n/app_en.arb",
+    "test/helpers",
+    "test/goldens",
+    "integration_test/app_test.dart"
+  ],
+  "required_directories": [
+    "android",
+    "ios",
+    "assets/images",
+    "assets/fonts",
+    "lib/features",
+    "lib/shared/widgets",
+    "test/helpers",
+    "test/goldens"
+  ],
+  "feature_path_pattern": "lib/features/<feature>",
+  "required_feature_paths": ["data", "domain", "application", "presentation"],
+  "forbidden_patterns": [
+    "secret or signing material in source control",
+    "unvalidated network or persisted data",
+    "domain behavior coupled to widgets or plugins",
+    "unhandled permission denial or application lifecycle",
+    "application code copied from the behavior pack"
+  ]
+}

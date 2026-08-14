@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "framework": "flutter",
+  "format": "markdown-first",
+  "skills": [
+    {"name": "inspect-flutter-target", "path": "skills/inspect-flutter-target/SKILL.md"},
+    {"name": "create-flutter-mobile-app", "path": "skills/create-flutter-mobile-app/SKILL.md"},
+    {"name": "implement-flutter-vertical-slice", "path": "skills/implement-flutter-vertical-slice/SKILL.md"},
+    {"name": "verify-flutter-delivery", "path": "skills/verify-flutter-delivery/SKILL.md"}
+  ]
+}
