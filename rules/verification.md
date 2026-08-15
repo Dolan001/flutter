@@ -5,3 +5,5 @@ affected integration journeys, accessibility and localization checks, lifecycle 
 offline behavior, dependency and permission audits, secret scans, Android release
 build, available iOS no-codesign release build, and independent review. Never claim an
 unavailable platform passed.
+When realtime is active, require typed frames, reconnect/resume, ordering/deduplication, offline and
+degraded states, Android/iOS lifecycle cleanup, accessibility, and integration evidence.

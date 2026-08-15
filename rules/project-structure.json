@@ -40,6 +40,21 @@
     "test/helpers",
     "test/goldens"
   ],
+  "conditional_path_groups": [
+    {
+      "name": "realtime",
+      "trigger_globs": ["lib/core/realtime/realtime_client.dart", "lib/features/*/data/*realtime*.dart"],
+      "required_paths": ["lib/core/realtime/realtime_client.dart", "lib/core/realtime/realtime_event.dart", "lib/core/realtime/realtime_state.dart", "test/core/realtime/realtime_client_test.dart", "integration_test/realtime_test.dart"],
+      "required_directories": [],
+      "required_source_patterns": [
+        {"id": "realtime-websocket-dependency", "globs": ["pubspec.yaml"], "pattern": "web_socket_channel:", "ignore_case": false, "message": "Flutter realtime requires the WebSocket channel dependency."},
+        {"id": "realtime-environment", "globs": [".env.example"], "pattern": "^REALTIME_WS_URL=", "ignore_case": false, "message": "The example environment must declare the realtime endpoint."}
+      ]
+    }
+  ],
+  "source_rules": [
+    {"id": "no-reusable-token-in-websocket-url", "globs": ["lib/**/*.dart"], "pattern": "(?:access_?token|jwt|bearer)=", "ignore_case": true, "scan_strings": true, "message": "Do not place reusable credentials in WebSocket URLs."}
+  ],
   "feature_path_pattern": "lib/features/<feature>",
   "required_feature_paths": ["data", "domain", "application", "presentation"],
   "forbidden_patterns": [

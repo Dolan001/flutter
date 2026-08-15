@@ -48,6 +48,10 @@ apps/mobile/
 
 Generation order:
 
+Realtime features conditionally add `lib/core/realtime` transport/event/state boundaries plus unit
+and integration tests. They handle Android/iOS lifecycle, network state, bounded retry, cursor
+resync, deduplication, and offline push without coupling sockets to widgets.
+
 1. Resolve supported Flutter/Dart, package, Android, and iOS constraints.
 2. Create native projects with non-secret identifiers and environment boundaries.
 3. Establish strict analysis, app assembly, navigation, theme, localization, and tests.
