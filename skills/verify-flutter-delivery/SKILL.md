@@ -11,5 +11,10 @@ accessibility, text scaling, localization, responsive layout, lifecycle restorat
 network failure, offline behavior, secure storage, permissions, dependency risk, and
 secret absence. Capture exact platform limitations and evidence; do not edit source.
 
+Reuse a passing shared full-matrix report only when its revision and workspace inputs
+still match, then run focused changed-slice checks. Do not rerun every Android/iOS and
+integration lane per feature. For design fidelity, act independently from the resolver
+and write the final `verification.json`; resolver evidence cannot approve its own repair.
+
 Apply `../implement-flutter-vertical-slice/references/production-delivery.md` from a
 clean verification context and compare against approved HTML/screenshots, not memory.
