@@ -7,3 +7,5 @@ Read project structure and architecture rules. Preserve safe brownfield conventi
 separate domain behavior from Flutter and plugins, and stabilize API, navigation,
 offline, and platform contracts. Emit decisions and task contracts, not application
 code.
+Emit a PRD-to-feature map with requirement IDs, familiar names, navigation, and planned
+presentation/application/domain/data ownership; reject vague inferred features.

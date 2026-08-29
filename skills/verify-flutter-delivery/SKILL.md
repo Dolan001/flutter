@@ -10,6 +10,8 @@ goldens, integration journeys, and available Android/iOS release builds. Verify
 accessibility, text scaling, localization, responsive layout, lifecycle restoration,
 network failure, offline behavior, secure storage, permissions, dependency risk, and
 secret absence. Capture exact platform limitations and evidence; do not edit source.
+Independently validate feature names against the PRD/fallback policy, responsibility-based Dart
+filenames, layered ownership, and the 250-line split limit.
 
 Reuse a passing shared full-matrix report only when its revision and workspace inputs
 still match, then run focused changed-slice checks. Do not rerun every Android/iOS and

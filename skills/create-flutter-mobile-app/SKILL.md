@@ -10,6 +10,8 @@ paths. Establish feature-first boundaries, validated environments, navigation, t
 localization, typed networking, secure storage, lifecycle handling, test foundations,
 and Android/iOS identifiers and flavors. Never place secrets or signing material in
 source control.
+First emit the PRD-to-feature map. Use explicit product nouns or justified familiar capability
+names, then scaffold responsibility-named files within presentation, application, domain, and data.
 
 Read `../../rules/project-structure.md` and
 `../implement-flutter-vertical-slice/references/production-delivery.md` before choosing

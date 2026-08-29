@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "framework": "flutter",
   "target_root": "apps/mobile",
   "required_paths": [
@@ -56,6 +56,16 @@
     {"id": "no-reusable-token-in-websocket-url", "globs": ["lib/**/*.dart"], "pattern": "(?:access_?token|jwt|bearer)=", "ignore_case": true, "scan_strings": true, "message": "Do not place reusable credentials in WebSocket URLs."}
   ],
   "feature_path_pattern": "lib/features/<feature>",
+  "module_path_pattern": "lib/features/<module>",
+  "module_naming": {
+    "style": "snake_case",
+    "ambiguous_names": ["identity", "work", "operations", "data", "management", "collaboration"],
+    "familiar_fallback_names": ["accounts", "authentication", "users", "notifications", "articles", "blog", "posts", "tasks", "todos", "webhooks", "chat", "files", "attachments", "payments", "orders", "products", "reports"],
+    "responsibility_packages": [],
+    "max_lines": [
+      {"globs": ["data/**/*.dart", "domain/**/*.dart", "application/**/*.dart", "presentation/**/*.dart"], "maximum": 250}
+    ]
+  },
   "required_feature_paths": ["data", "domain", "application", "presentation"],
   "forbidden_patterns": [
     "secret or signing material in source control",
