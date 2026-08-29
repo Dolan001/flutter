@@ -55,7 +55,7 @@ resync, deduplication, and offline push without coupling sockets to widgets.
 Naming and growth rules:
 
 - Build a feature map from PRD journeys, screens, entities, and API resources. Preserve clear PRD
-  product terms; when a capability is unnamed, use familiar names such as `authentication`,
+  product terms; when a capability is unnamed, use familiar names such as `authentications`,
   `accounts`, `notifications`, `articles`, `tasks`, `webhooks`, or `chat`.
 - Do not invent `identity`, `work`, `operations`, `data`, `management`, or `collaboration` features
   unless the PRD intentionally names them. Use snake_case feature directories and Dart files.
