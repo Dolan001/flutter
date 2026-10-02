@@ -10,6 +10,11 @@ goldens, integration journeys, and available Android/iOS release builds. Verify
 accessibility, text scaling, localization, responsive layout, lifecycle restoration,
 network failure, offline behavior, secure storage, permissions, dependency risk, and
 secret absence. Capture exact platform limitations and evidence; do not edit source.
+Start the verified backend and disposable PostgreSQL environment, seed the declared deterministic
+dataset, and exercise the generated Dart client through real HTTP. Require authenticated success,
+negative, authorization, persistence round-trip, error mapping, and cleanup. Record current backend
+evidence and OpenAPI hashes in `.ai/evidence/client-integration/mobile.json`. Fixtures cannot pass
+this integration check.
 Independently validate feature names against the PRD/fallback policy, responsibility-based Dart
 filenames, layered ownership, and the 250-line split limit.
 
